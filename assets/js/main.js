@@ -7,5 +7,21 @@ function escucha(){
 escucha();
 
 function cargada(){
-    alert("la pagina cargo correctamente");
+    alert("La pagina cargo correctamente");
 }
+
+function encima(){
+    var encima = document.getElementById("input");
+    encima.addEventListener("mouseover", function(){
+        alert("Estas sobre mi"); 
+    })        
+}
+encima();
+
+function afuera(){
+    var afuera = document.getElementById("input");
+    afuera.addEventListener("mouseout", function(){
+        alert("No estas sobre mi");
+    })
+}    
+afuera();    
